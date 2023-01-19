@@ -4,8 +4,6 @@ $(document).ready(function(){
         $('.menubtn i').toggleClass("active")
 
     });
-    
-
 });
 //typing animation script
 var typed=new Typed(".typing",{
