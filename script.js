@@ -7,7 +7,7 @@ $(document).ready(function(){
 });
 //typing animation script
 var typed=new Typed(".typing",{
-    strings:["Web-Developer" , "Student" , "Developer"],
+    strings:["Student" , "Developer"],
     typeSpeed:100,
     backSpeed:60,
     loop:true
