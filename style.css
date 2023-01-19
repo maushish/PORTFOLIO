@@ -4,7 +4,9 @@
     padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
+    background: url('ko.jpg');
 }
+
 /*navbar styling*/
 .max-width{
     max-width: 1300px;
@@ -16,6 +18,7 @@
     padding: 30px 0;
     width: 100%;
     font-family: 'ubuntu', sans-serif;
+    z-index: 999;
 
 }
 .navbar .sticky{
@@ -92,10 +95,127 @@
     color: crimson;
     font-weight: 500;
 }
-/*media queries*/
-@media(max-width:1100px){
+//*---------------------------------------ABOUT SECTION STYLING-----------------*/
+section{
+    padding: 100px 0;
+}
+
+
+
+
+.aboutme{
+    font-family: 'Poppis' , sans-serif;
+}
+
+.aboutme .title{
+    font-family: 'Ubuntu' , sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+
+}
+.aboutme .title::before{
+    content:"";
+    position: absolute;
+    bottom: -64px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: crimson;
+    transform: translateX(-50%);
+
+
+}
+.aboutme .title::after{
+    content:"who i am";
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    background: crimson;
+    transform: translateX(-50%);
+    background-color: #111;
+
+
+}
+.aboutme .abtcontent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.aboutme .abtcontent .column-left {
+    width: 50%;
+}
+
+
+.aboutme .abtcontent .column-left  img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.aboutme .abtcontent .column-right{
+    width: 45%;
+}
+.aboutme .abtcontent .column-right .text{
+    width: 95%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.aboutme .abtcontent .column-right .text p{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------media queries------------------------------------------*/
+@media(max-width:1300px){
     .home .max-width{
-    margin-left: 0;
+    margin-left: 0;}    
+}
+@media(max-width:1100px){
+    .aboutme .abtcontent .column-left img{
+        height: 200px;
+        width: 200px;
+        align-content: center;
+    }
 }
 @media(max-width:991px){
     .home .max-width{
@@ -113,7 +233,19 @@
 .home .homecontent .text3{
     font-size: 32px;
 }
-
+.max-width{
+    max-width: 500px;
+}
+.aboutme .abtcontent .column-right{
+    width: 100%;
+}
+.aboutme .abtcontent .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+}
+.aboutme .abtcontent .right{
+    flex: 100%;
 }
 
 
