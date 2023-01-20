@@ -95,7 +95,7 @@
     color: crimson;
     font-weight: 500;
 }
-/*---------------------------------------ABOUT SECTION STYLING-----------------*/
+//*---------------------------------------ABOUT SECTION STYLING-----------------*/
 section{
     padding: 100px 0;
 }
@@ -103,8 +103,8 @@ section{
 
 
 
-.aboutme{
-    font-family: 'Poppis' , sans-serif;
+.aboutme ,.skills{
+    font-family: 'Poppins' , sans-serif;
 }
 
 .aboutme .title{
@@ -175,8 +175,89 @@ section{
 }
 
 
+/*--------------------------SKILSS SECTION STYLING----------------------*/
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40vh;
+    
+}
+.skills .skills-content .left .text{
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+.skills .skills-content .column{
+    width:calc(50% - 30px);
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+.skills .skills-content .left .exp{
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    width: 60vh;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 10px;
+    
+    
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background:#fff;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 80;
+    top: 0;
+    background: orchid;
+}
+.skills-content .right .html::before{
+    width: 70%;
+}
+.skills-content .right .css::before{
+    width: 50%;
+}
+.skills-content .right .python::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 40%;
+}
 
 
+.skills .skills-content .right span{
+    font-weight:500;
+    font-size: 18px;
+    color: crimson;
+
+}
 
 
 
@@ -233,6 +314,9 @@ section{
 .home .homecontent .text3{
     font-size: 32px;
 }
+.skills .skills-content .column{
+    width: 100%;
+}
 .max-width{
     max-width: 500px;
 }
@@ -287,6 +371,9 @@ section{
         display: inline-block;
         margin: 25px 0;
         font-size: 25px;
+    }
+    .skills .skills-content .column{
+        width: 100%;
     }
 
 
